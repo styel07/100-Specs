@@ -127,7 +127,7 @@ var domains = {
   'laughingsquid.com' : '162.159.247.97',
   'slumlordhosting.com' : '198.61.179.126',
   'jsonformatter.curiousconcept.com' : '104.28.5.70'
-}
+};
 
 /* Step 12
  *
@@ -142,6 +142,15 @@ var domains = {
  *   Konqueror  => "konqueror.org"
  *
  */
+
+var browsers = {
+  Chromium : 'google.com',
+  Safari : 'apple.com',
+  Opera : 'opera.com',
+  Firefox : 'mozilla.org',
+  Sleipnir : 'fenrir-inc.com',
+  Konqueror : 'konqueror.org'
+};
 
 
 /* Step 13
