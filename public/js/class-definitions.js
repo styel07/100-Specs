@@ -360,6 +360,9 @@ function addNumbers(num1, num2) {
  *
  */
 
+function installLinux(typeOfLinux) {
+  return (linuxFlavors.indexOf(typeOfLinux) > -1) ? true : false;
+}
 
 /* Step 23
  *
