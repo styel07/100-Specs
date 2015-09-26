@@ -44,7 +44,7 @@ var planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus
  *
  */
 
-var galilean_moons = ['something', '', '', ''];
+var galilean_moons = ['io', 'europa', 'ganymede', 'callisto'];
 
 
 /* Step 6 φ
