@@ -547,7 +547,13 @@ function Person(name,money,age,gender) {
   this.gender = gender;
 }
 
+Person.prototype.spendMoney = function(subMoney) {
+  this.money -= subMoney;
+};
 
+Person.prototype.earnMoney = function(addMoney) {
+  this.money += addMoney;
+};
 
 /* Step 28
  *
