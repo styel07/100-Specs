@@ -540,6 +540,14 @@ function favoritePlanet(currentPlanet) {
  *
  */
 
+function Person(name,money,age,gender) {
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+}
+
+
 
 /* Step 28
  *
