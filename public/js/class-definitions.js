@@ -587,9 +587,7 @@ function purchaseLaptop(laptop) {
  *
  */
 
-function canTalkAbout() {
 
-}
 
 /* Step 30
  *
@@ -611,6 +609,10 @@ function canTalkAbout() {
  *   write
  *
  */
+
+function Pen(color) {
+
+}
 
 
 /* Step 31
