@@ -456,6 +456,35 @@ function browseURL (browser) {
  *
  */
 
+// var livingOrganismClassification = [
+//  'Kingdom',
+//  'Phylum',
+//  'Class',
+//  'Order',
+//  'Family',
+//  'Genus',
+//  'Species'];
+
+// THIS IS THE BETTER WAY TO DO IT
+// function listLivingOrgClass() {
+//   var ul = document.createElement('ul');
+//   for (var i = 0; i < livingOrganismClassification.length; i++) {
+//     var textNode = document.createTextNode(livingOrganismClassification[i]);
+//     var li = document.createElement('li');
+//     li.appendChild(textNode);
+//     ul.appendChild(li);
+//   }
+//   var result = ul.toString();
+//   return result;
+// }
+function listLivingOrgClass() {
+  var result = '<ul>';
+  for (var i = 0; i < livingOrganismClassification.length; i++) {
+    result += '<li>' + livingOrganismClassification[i] + '</li>';
+  }
+  var finalresult = result + '</ul>';
+  return '"' + finalresult + '"';
+}
 
 /* Step 26
  *
