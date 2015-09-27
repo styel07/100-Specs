@@ -587,7 +587,13 @@ function purchaseLaptop(laptop) {
  *
  */
 
-
+function canTalkAbout(club) {
+  if (club === 'Fight Club') {
+    return false;
+  } else {
+    return true;
+  }
+}
 
 /* Step 30
  *
