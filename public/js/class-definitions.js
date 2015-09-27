@@ -616,8 +616,8 @@ function canTalkAbout(club) {
  *
  */
 
-function Pen(color) {
-
+function Pen(aColor) {
+  this.color = aColor;
 }
 
 
