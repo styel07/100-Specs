@@ -382,6 +382,28 @@ function installLinux(typeOfLinux) {
  *
  */
 
+// var beers = {
+//   IPA : 'Ale',
+//   Lager : 'Strong',
+//   Heffeweisen : 'German',
+//   Stout : ['Thick', 'Dark'],
+//   Porter : 'Bitter',
+//   Ale : ['Light', 'Golden']
+// };
+
+function drink(beer) {
+  for (var key in beers) {
+    var value = beers[beer];
+    if (value) {
+      // if (value[beer].isArray()) {
+      //   return 'This ' + beer + ' is ' + beers[beer] + '.';
+      // }
+      return 'This ' + beer + ' is ' + beers[beer] + '.';
+    } else {
+      return false;
+    }
+  }
+}
 
 /* Step 24
  *
