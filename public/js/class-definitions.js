@@ -689,10 +689,6 @@ function SolarSystem() {
   this.planets = [];
 }
 
-SolarSystem.prototype.addPlanet = function() {
-
-}
-
 /* Step 33
  *
  * Define a class named "PrincessLeia" that is a subclass of "Person"
