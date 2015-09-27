@@ -661,7 +661,12 @@ Garden.prototype.water = function() {
   this.isWatered = true;
 };
 
-
+Garden.prototype.grow = function() {
+  if (this.isWatered === true) {
+    this.plantsTotal++;
+  }
+  return false;
+};
 
 
 /* Step 32
