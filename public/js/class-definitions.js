@@ -567,6 +567,13 @@ Person.prototype.earnMoney = function(addMoney) {
  *
  */
 
+function purchaseLaptop(laptop) {
+  if (laptopCosts[laptop]) {
+    return laptopCosts[laptop].toString();
+  } else {
+    return -1;
+  }
+}
 
 /* Step 29
  *
@@ -580,6 +587,9 @@ Person.prototype.earnMoney = function(addMoney) {
  *
  */
 
+function canTalkAbout() {
+
+}
 
 /* Step 30
  *
