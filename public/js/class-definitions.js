@@ -668,7 +668,6 @@ Garden.prototype.grow = function() {
   return false;
 };
 
-
 /* Step 32
  *
  * Define a class named "SolarSystem" with a property
@@ -686,6 +685,9 @@ Garden.prototype.grow = function() {
  *
  */
 
+function SolarSystem() {
+  this.planets = planets;
+}
 
 /* Step 33
  *
