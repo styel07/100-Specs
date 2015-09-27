@@ -620,6 +620,10 @@ function Pen(aColor) {
   this.color = aColor;
 }
 
+Pen.prototype.write = function(color) {
+  return this.color + ': ' + color;
+};
+
 
 /* Step 31
  *
@@ -647,6 +651,22 @@ function Pen(aColor) {
  *   grow
  *
  */
+
+function Garden(plantsTotal) {
+  this.plantsTotal = plantsTotal;
+  this.isWatered = false;
+}
+
+Garden.prototype.water = function() {
+  this.isWatered = true;
+};
+
+Garden.prototype.grow = function() {
+  if (this.isWatered === true) {
+    this.plantsTotal++;
+  }
+  return false;
+};
 
 
 /* Step 32
