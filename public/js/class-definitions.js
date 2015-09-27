@@ -391,18 +391,31 @@ function installLinux(typeOfLinux) {
 //   Ale : ['Light', 'Golden']
 // };
 
-function drink(beer) {
-  for (var key in beers) {
-    var value = beers[beer];
-    if (value) {
-      // if (value[beer].isArray()) {
-      //   return 'This ' + beer + ' is ' + beers[beer] + '.';
-      // }
-      return 'This ' + beer + ' is ' + beers[beer] + '.';
-    } else {
-      return false;
+// function drink(beer) {
+//   for (var key in beers) {
+//     var value = beers[beer];
+//     if (value) {
+//       // if (value[beer].isArray()) {
+//       //   return 'This ' + beer + ' is ' + beers[beer] + '.';
+//       // }
+//       return 'This ' + beer + ' is ' + beers[beer] + '.';
+//     } else {
+//       return false;
+//     }
+//   }
+// }
+
+function drink (type) {
+  var string = 'This ' + type + ' is ';
+  if (!(beers[type])) {
+    return false;
+  } else if (Array.isArray(beers[type])) {
+    var desc = beers[type];
+    for (var i = 0; i < desc.length; i++) {
+      string += desc[i] + ' and ';
     }
   }
+  return string + beers[type] + '.';
 }
 
 /* Step 24
@@ -417,6 +430,21 @@ function drink(beer) {
  *
  */
 
+//  var browsers = {
+//   Chromium : 'google.com',
+//   Safari : 'apple.com',
+//   Opera : 'opera.com',
+//   Firefox : 'mozilla.org',
+//   Sleipnir : 'fenrir-inc.com',
+//   Konqueror : 'konqueror.org'
+// };
+
+function browseURL (browser) {
+  if (browsers[browser]) {
+    return browsers[browser];
+  }
+  return false;
+}
 
 /* Step 25
  *
