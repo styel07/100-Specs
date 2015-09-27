@@ -506,6 +506,16 @@ function listLivingOrgClass() {
  *
  */
 
+function favoritePlanet(currentPlanet) {
+  for (var key in planets) {
+    var aPlanet = planets[key];
+    if (planets.indexOf(currentPlanet) > -1) {
+      return 'I\'m from ' + currentPlanet + ', but I wish I could go to ' + planets[4];
+    } else {
+      return currentPlanet + ' is not a planet!';
+    }
+  }
+}
 
 /* Step 27
  *
